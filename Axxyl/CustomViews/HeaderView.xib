@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="Axxyl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="a3u-LW-JlQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfi-vv-tVc">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="BcC-Ps-Chs"/>
+                                <constraint firstAttribute="height" constant="48" id="hQn-id-NnR"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Left_Arrow"/>
+                            <connections>
+                                <action selector="backBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Uxd-wf-R5I"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aa-a8-ARE">
+                            <rect key="frame" x="54" y="0.0" width="321" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="PpS-DH-Zof"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3Ai-mL-uyZ"/>
+                        <constraint firstItem="cfi-vv-tVc" firstAttribute="centerY" secondItem="a3u-LW-JlQ" secondAttribute="centerY" id="Zy6-ep-TFd"/>
+                        <constraint firstItem="9aa-a8-ARE" firstAttribute="centerY" secondItem="a3u-LW-JlQ" secondAttribute="centerY" id="ejs-Gc-OAm"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="a3u-LW-JlQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NYH-bD-KUu"/>
+                <constraint firstItem="a3u-LW-JlQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ayF-wH-ecC"/>
+                <constraint firstAttribute="trailing" secondItem="a3u-LW-JlQ" secondAttribute="trailing" id="iU0-jE-0gs"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLbl" destination="9aa-a8-ARE" id="Dab-Dd-gnZ"/>
+                <outlet property="widthConstriant" destination="BcC-Ps-Chs" id="3Xh-mz-zvP"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Left_Arrow" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

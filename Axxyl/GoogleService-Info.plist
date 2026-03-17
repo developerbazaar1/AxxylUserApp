@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>260111465127-a7u7o75jvgvra2lla9n44dm9c5cjk4rv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.260111465127-a7u7o75jvgvra2lla9n44dm9c5cjk4rv</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>260111465127-ppiup78pgkn2tc8cqu2ms20so73sj59a.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXGHE_9hQ6IrP8na1ktVfiWPP5nUDnvmg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>260111465127</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.axxyl.taxiservice.Axxyl</string>
+	<key>PROJECT_ID</key>
+	<string>axxyl-5b819</string>
+	<key>STORAGE_BUCKET</key>
+	<string>axxyl-5b819.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:260111465127:ios:5e6cfbd727f22ebda7b982</string>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewHeaderView" customModule="Axxyl" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="Y1P-vp-vxb" id="fRO-Mn-NoW"/>
+                <outlet property="buttonWidthConstraint" destination="Slz-18-atk" id="z42-M1-fTz"/>
+                <outlet property="headerLbl" destination="HAE-95-Nx5" id="hYY-pT-Azz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PVe-3x-Jlp">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1P-vp-vxb">
+                    <rect key="frame" x="5" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0F4-nK-dda"/>
+                        <constraint firstAttribute="width" constant="50" id="Slz-18-atk"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Left_Arrow"/>
+                    <connections>
+                        <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="xvR-la-NAA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAE-95-Nx5">
+                    <rect key="frame" x="60" y="0.0" width="320" height="50"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wnn-fj-Jkp"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HAE-95-Nx5" firstAttribute="top" secondItem="PVe-3x-Jlp" secondAttribute="top" id="2Yi-Ry-h8j"/>
+                <constraint firstAttribute="trailing" secondItem="HAE-95-Nx5" secondAttribute="trailing" constant="10" id="3bP-Rk-DLb"/>
+                <constraint firstItem="HAE-95-Nx5" firstAttribute="leading" secondItem="Y1P-vp-vxb" secondAttribute="trailing" constant="5" id="8lF-Xo-g6X"/>
+                <constraint firstItem="wnn-fj-Jkp" firstAttribute="bottom" secondItem="HAE-95-Nx5" secondAttribute="bottom" id="FCR-kA-jgo"/>
+                <constraint firstItem="Y1P-vp-vxb" firstAttribute="top" secondItem="PVe-3x-Jlp" secondAttribute="top" id="NTL-Yh-rBr"/>
+                <constraint firstItem="wnn-fj-Jkp" firstAttribute="bottom" secondItem="Y1P-vp-vxb" secondAttribute="bottom" id="dBz-OE-5hK"/>
+                <constraint firstItem="Y1P-vp-vxb" firstAttribute="leading" secondItem="PVe-3x-Jlp" secondAttribute="leading" constant="5" id="h7J-0r-oaT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-66.153846153846146" y="-341.58767772511845"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Left_Arrow" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
